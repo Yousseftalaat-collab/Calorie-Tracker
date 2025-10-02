@@ -1,0 +1,78 @@
+.recordRow {
+  display: grid;
+  grid-template-columns: 130px 120px auto 90px 40px;
+  gap: 60px;
+  align-items: center;
+  padding: 12px 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #fff;
+  transition: background 0.2s;
+}
+.recordRow:nth-child(even) {
+  background: #fafafa;
+}
+
+.recordRow:hover {
+  background: #f3e5f5;
+}
+.colDate {
+  font-size: 15px;
+  color: var(--record-text-color);
+  transform: translateX(-10%);
+}
+
+.colMeal {
+  font-weight: 600;
+  color: var(--record-text-color);
+  font-size: 15px;
+  color: #6a1b9a;
+  transform: translateX(-10%);
+}
+
+.colContent {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--record-text-color);
+  color: #6a1b9a;
+  transform: translateX(-90%);
+}
+
+.colCalories {
+  font-weight: 700;
+  color: var(--record-text-color);
+  font-size: 15px;
+  color: #6a1b9a;
+  transform: translateX(-30%);
+}
+.Action {
+  transform: translateX(-50%);
+}
+
+.delete-btn {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.delete-btn:active {
+  transform: scale(0.98);
+}
+
+.invalid {
+  color: #e65a00;
+  font-weight: 700;
+}

@@ -1,0 +1,82 @@
+.form {
+  background-color: var(--theme-background-ultralight);
+  padding: 20px;
+  border-radius: var(--theme-border-radius-smooth);
+  border: 1px solid var(--theme-background-normal);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--theme-color-dark);
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="number"],
+.form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--theme-color-normal);
+  background-color: var(--theme-background-light);
+  color: var(--theme-color-dark);
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form input:hover,
+.form select:hover,
+.form input:focus,
+.form select:focus {
+  border-color: var(--theme-color-dark);
+  background-color: var(--theme-background-normal);
+  outline: none;
+}
+
+.error {
+  border: 1px solid maroon !important;
+  background-color: var(--theme-background-light);
+  color: maroon;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer button {
+  background-color: var(--theme-color-normal);
+  color: var(--theme-background-light);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 200px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: var(--theme-color-dark);
+  color: var(--theme-background-light);
+}
+
+.footer button.secondary {
+  background-color: var(--theme-background-light);
+  border: 1px solid var(--theme-background-normal);
+  color: var(--theme-color-normal);
+}
+
+.footer button.secondary:hover {
+  background-color: var(--theme-background-normal);
+  color: var(--theme-color-dark);
+}
